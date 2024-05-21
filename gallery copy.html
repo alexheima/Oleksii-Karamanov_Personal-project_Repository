@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css">
+    <script src="script.js" defer></script>
+    <title>gallery</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo" ><img src="logo.png" alt ="ALEX KARAMANOV" id="logo"> </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- <div class="gallery">
+        <img src="0_0.jpg" alt="Image 1">
+        <img src="0_1.jpg" alt="Image 2">
+        <img src="0_2.jpeg" alt="Image 3">
+        <img src="1.jpg" alt="Image 4">
+        <img src="2.jpg" alt="Image 5">
+        <img src="5.jpg" alt="Image 6">
+      </div> -->
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 4px 8px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+
+/* @media screen and (max-width: 1200px) {
+  .column {
+    -ms-flex: 32.5%;
+    flex: 32.5%;
+    max-width: 32.5%;
+  }
+} */
+
+@media screen and (max-width: 1000px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+
+
+
+
+  <div class="basic-grid">
+    <a href="travel.html" class="nav-link"><img src="travel.jpg" style="width:100%"><p class="albums">Travel</p></a>
+    <a href="travel.html" class="nav-link"><img src="portraits.jpg" style="width:100%"><p class="albums">Travel</a>
+    <a href="travel.html" class="nav-link"><img src="5.jpg" style="width:100%"><p class="albums">Travel</a>
+    <a href="travel.html" class="nav-link"><img src="bussiness.jpg" style="width:100%"><p class="albums">Travel</a>
+  </div>
+  
+
+<div id="fullImageView" onclick="closeFullView()">
+  <img id="fullImage"/>
+  <span id="closeButton" onclick="closeFullView()">&times;</span>
+</div>
+
+<footer>
+  <section class="flexfooter">
+
+      <a href="https://www.instagram.com/alex_karamanov" ><img src="images/instagram-white-icon copy.png" style="width:100%"></a>
+      <a href="https://www.500px.com/alex_karamanov" ><img src="images/500px.png" style="width:100%"></a>
+      <a href="https://www.stocksy.com/alexalina" ><img src="images/logoStocksy.svg" style="width:100%"></a>
+      <a href="https://www.flickr.com/photos/alex_karamanov" ><img src="images/Flickr-PNG-Picture.png" style="width:100%"></a>
+      </section>
+ 
+
+  <p class="copyrght">2024 &copy; Alex Karamanov  </p> 
+</footer>
+<script >
+  function fullView(imgLink){
+  document.getElementById("fullImage").src = imgLink;
+  document.getElementById("fullImageView").style.display = "block";
+}
+function closeFullView(){
+  document.getElementById("fullImageView").style.display = "none";
+
+}
+</script>
+</body>
+</html>

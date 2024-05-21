@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css">
+    <script src="script.js" defer></script>
+    <title>Travel</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo" ><img src="images/logo.png" alt ="ALEX KARAMANOV" id="logo"> </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<main>
+<div class="row"> 
+  <div class="column">
+    <img src="images/t1.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t2.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t3.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t4.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t5.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t6.jpg" style="width:100%" onclick="fullView(this.src)"/>
+  </div>
+  <div class="column">
+    <img src="images/t6.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t5.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t4.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t3.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t2.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t1.jpg" style="width:100%" onclick="fullView(this.src)"/>
+  </div>  
+  <div class="column">
+    <img src="images/t3.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t2.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t1.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t6.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t4.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t5.jpg" style="width:100%" onclick="fullView(this.src)"/>
+  </div>
+  <div class="column">
+    <img src="images/t5.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t6.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t4.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t2.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t1.jpg" style="width:100%" onclick="fullView(this.src)"/>
+    <img src="images/t3.jpg" style="width:100%" onclick="fullView(this.src)"/>
+  </div>
+</div>
+<div id="fullImageView" onclick="closeFullView()">
+  <img id="fullImage"/>
+  <span id="closeButton" onclick="closeFullView()">&times;</span>
+</div>
+</main>
+
+<footer>
+    <section class="flexfooter">
+        <a href="https://www.instagram.com/alex_karamanov" ><img src="images/instagram-white-icon copy.png" style="width:100%"></a>
+        <a href="https://www.500px.com/alex_karamanov" ><img src="images/500px.png" style="width:100%"></a>
+        <a href="https://www.stocksy.com/alexalina" ><img src="images/logoStocksy.svg" style="width:100%"></a>
+        <a href="https://www.flickr.com/photos/alex_karamanov" ><img src="images/Flickr-PNG-Picture.png" style="width:100%"></a>
+    </section>
+    <p class="copyrght">2024 &copy; Alex Karamanov  </p> 
+</footer>
+
+</body>
+</html>
